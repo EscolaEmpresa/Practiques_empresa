@@ -10,13 +10,12 @@
             font-family: 'Inter', sans-serif;
             background-color: #f1f5f9; /* Slate 100 */
         }
-        .card-link {
+        .card {
             background-color: white;
             border-radius: 0.75rem;
             box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
             transition: all 0.3s ease;
             border: 1px solid #e2e8f0; /* Slate 200 */
-            display: block;
         }
         .card-link:hover {
             transform: translateY(-5px);
@@ -32,15 +31,20 @@
     </div>
 
     <div class="max-w-5xl mx-auto mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <a href="exempcio.html" class="card-link p-6">
+        <a href="exempcio.html" class="card card-link p-6 block">
             <h3 class="text-xl font-bold text-slate-800 mb-2">Exempció de Pràctiques</h3>
-            <p class="text-slate-600 text-sm">Guia pas a pas per gestionar les sol·licituds d'exempció de la FCT Dual General.</p>
+            <p class="text-slate-600 text-sm">Guia interactiva per gestionar les sol·licituds d'exempció de la FCT Dual General.</p>
         </a>
-        <div class="card-link p-6 opacity-60 cursor-not-allowed">
+        <div class="card p-6">
             <h3 class="text-xl font-bold text-slate-800 mb-2">Renúncia a les Pràctiques</h3>
-            <p class="text-slate-600 text-sm">Procediment a seguir quan un alumne renuncia a fer les pràctiques durant el curs actual. (Properament)</p>
+            <p class="text-slate-600 text-sm mb-4">Procediment a seguir quan un alumne renuncia a fer les pràctiques durant el curs actual.</p>
+            <ol class="list-decimal list-inside text-slate-700 text-sm space-y-2">
+                <li>Descarregar el model <strong>FML79</strong> del curs de Moodle de formularis.</li>
+                <li>Imprimir i donar el document a l'alumne perquè l'ompli i el signi.</li>
+                <li>Guardar una còpia a la carpeta de tutoria de l'alumne.</li>
+            </ol>
         </div>
-        <div class="card-link p-6 opacity-60 cursor-not-allowed">
+        <div class="card p-6 opacity-60">
             <h3 class="text-xl font-bold text-slate-800 mb-2">Fer les Pràctiques</h3>
             <p class="text-slate-600 text-sm">Tots els procediments relacionats amb el seguiment de l'alumnat que realitza l'estada a l'empresa. (Properament)</p>
         </div>
