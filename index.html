@@ -16,6 +16,7 @@
             box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
             transition: all 0.3s ease;
             border: 1px solid #e2e8f0; /* Slate 200 */
+            display: block;
         }
         .card-link:hover {
             transform: translateY(-5px);
@@ -30,27 +31,20 @@
         <p class="mt-4 text-lg text-slate-600">Una eina per ajudar els tutors a navegar pels procediments de pràctiques del centre.</p>
     </div>
 
-    <div class="max-w-4xl mx-auto mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        
-        <!-- Targeta per a la Guia d'Exempcions (Enllaç actualitzat) -->
-        <a href="exempcio.html" class="card-link block p-6">
+    <div class="max-w-5xl mx-auto mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <a href="exempcio.html" class="card-link p-6">
             <h3 class="text-xl font-bold text-slate-800 mb-2">Exempció de Pràctiques</h3>
-            <p class="text-slate-600 text-sm">Guia pas a pas per gestionar les sol·licituds d'exempció de la FCT Dual General (25%, 50% i 100%).</p>
+            <p class="text-slate-600 text-sm">Guia pas a pas per gestionar les sol·licituds d'exempció de la FCT Dual General.</p>
         </a>
-
-        <!-- Targeta d'Exemple per a una Futura Guia -->
-        <a href="#" class="card-link block p-6 opacity-60 cursor-not-allowed">
-            <h3 class="text-xl font-bold text-slate-800 mb-2">Gestió d'Incidències</h3>
-            <p class="text-slate-600 text-sm">Procediment a seguir en cas d'incidències o problemes durant l'estada de l'alumne a l'empresa. (Properament)</p>
-        </a>
-
-        <!-- Afegeix més targetes aquí per a cada nou procediment.
-             Només has de copiar una de les targetes anteriors, canviar el 'href' 
-             al nom del teu nou arxiu HTML i actualitzar el títol i la descripció.
-        -->
-
+        <div class="card-link p-6 opacity-60 cursor-not-allowed">
+            <h3 class="text-xl font-bold text-slate-800 mb-2">Renúncia a les Pràctiques</h3>
+            <p class="text-slate-600 text-sm">Procediment a seguir quan un alumne renuncia a fer les pràctiques durant el curs actual. (Properament)</p>
+        </div>
+        <div class="card-link p-6 opacity-60 cursor-not-allowed">
+            <h3 class="text-xl font-bold text-slate-800 mb-2">Fer les Pràctiques</h3>
+            <p class="text-slate-600 text-sm">Tots els procediments relacionats amb el seguiment de l'alumnat que realitza l'estada a l'empresa. (Properament)</p>
+        </div>
     </div>
 </body>
 </html>
-
 
