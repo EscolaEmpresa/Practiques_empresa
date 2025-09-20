@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ca" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procediment: Dades de l'Empresa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f1f5f9; /* Slate 100 */
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            border: 1px solid #e2e8f0; /* Slate 200 */
+        }
+        .back-link {
+            color: #4f46e5;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .step {
+            border-left: 3px solid #4f46e5;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        .step:before {
+            content: '';
+            position: absolute;
+            left: -0.7rem;
+            top: 0;
+            width: 1.25rem;
+            height: 1.25rem;
+            border-radius: 9999px;
+            background-color: white;
+            border: 3px solid #4f46e5;
+        }
+    </style>
+</head>
+<body class="p-8">
+    <div class="max-w-4xl mx-auto">
+        <div class="mb-8">
+            <a href="fer-practiques.html" class="back-link">← Tornar a "Fer les Pràctiques"</a>
+        </div>
+        <div class="text-center">
+            <h1 class="text-4xl font-extrabold text-slate-800">Dades de l'Empresa</h1>
+            <p class="mt-4 text-lg text-slate-600">Passos i consideracions per donar d'alta una empresa col·laboradora al sBID.</p>
+        </div>
+
+        <div class="mt-12 space-y-8">
+            <div class="card p-8">
+                <h2 class="text-2xl font-bold text-slate-800 mb-6">Passos per donar d'alta una empresa</h2>
+                <div class="space-y-8">
+                    <div class="step">
+                        <h3 class="font-bold text-lg">1. Creació de la proposta</h3>
+                        <p class="text-slate-600">S'obtenen les dades inicials de l'empresa a través del document <strong>Ref04</strong>. El codi CCAE es pot consultar <a href="https://www.idescat.cat/metodes/classificacions/ccae-2025-ca" target="_blank" class="text-indigo-600 underline">aquí</a>.</p>
+                    </div>
+                    <div class="step">
+                        <h3 class="font-bold text-lg">2. Empresa creada</h3>
+                        <p class="text-slate-600">Les dades es validen a través de les cambres de comerç corresponents.</p>
+                    </div>
+                    <div class="step">
+                        <h3 class="font-bold text-lg">3. Empresa homologada</h3>
+                        <p class="text-slate-600">L'empresa signa el document <strong>Ref02</strong>, que l'homologa per fer pràctiques. Aquest document s'ha d'entregar al coordinador.</p>
+                    </div>
+                    <div class="step">
+                        <h3 class="font-bold text-lg">4. Estudi homologat</h3>
+                        <p class="text-slate-600">El tutor visita l'empresa i homologa els estudis concrets que s'hi poden cursar, omplint el document <strong>Ref03</strong> o <strong>Ref03c</strong>.</p>
+                    </div>
+                </div>
+                 <div class="mt-6 bg-yellow-100 border-l-4 border-yellow-500 text-yellow-800 p-4 rounded-md">
+                    <p class="font-bold">A tenir en compte:</p>
+                    <p class="mt-2 text-sm">L'homologació pot caducar si l'empresa passa diversos cursos sense acollir alumnes. El procés d'alta pot allargar-se en el temps.</p>
+                </div>
+            </div>
+
+            <div class="card p-8">
+                <h2 class="text-2xl font-bold text-slate-800 mb-4">Documents Clau i Aclariments</h2>
+                 <ul class="list-disc list-inside text-slate-700 space-y-3">
+                    <li><strong>Ref02:</strong> Document d'alta de l'entitat. Sense aquest, l'empresa no està homologada per a cap especialitat. El centre n'ha de tenir una còpia.</li>
+                    <li><strong>Ref03:</strong> Document (pot ser telemàtic) amb el qual el tutor dona d'alta una especialitat o cicle per a una empresa. El centre no l'ha de custodiar.</li>
+                </ul>
+                <p class="mt-4 text-slate-700">Per a una descripció més completa, pots consultar el vídeo <a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank" class="text-indigo-600 underline">BID DdE 03 Entitats</a>.</p>
+            </div>
+             <div class="card p-8 bg-indigo-50 border-indigo-200">
+                <h2 class="text-2xl font-bold text-slate-800 mb-4">Consideracions per a la Dual Intensiva</h2>
+                <p class="text-slate-700 leading-relaxed">Per a les pràctiques en modalitat Dual Intensiva, a més d'aquests passos, s'han de realitzar tràmits addicionals per formalitzar el conveni. Aquests tràmits són imprescindibles per poder fer acords d'aquest tipus.</p>
+                <div class="mt-4">
+                    <a href="conveni-dual.html" class="inline-block bg-indigo-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-indigo-700 transition-colors">Anar al procediment de Convenis Dual Intensiva</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
