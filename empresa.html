@@ -40,6 +40,10 @@
             background-color: white;
             border: 3px solid #4f46e5;
         }
+        .image-placeholder {
+            background-color: #f8fafc; /* slate-50 */
+            border: 1px solid #e2e8f0; /* slate-200 */
+        }
     </style>
 </head>
 <body class="p-8">
@@ -65,12 +69,44 @@
                         <p class="text-slate-600">Les dades es validen a través de les cambres de comerç corresponents.</p>
                     </div>
                     <div class="step">
-                        <h3 class="font-bold text-lg">3. Empresa homologada</h3>
+                        <h3 class="font-bold text-lg">3. Empresa homologada (Ref02)</h3>
                         <p class="text-slate-600">L'empresa signa el document <strong>Ref02</strong>, que l'homologa per fer pràctiques. Aquest document s'ha d'entregar al coordinador.</p>
+                        <div class="mt-4 p-4 border rounded-lg bg-slate-50">
+                            <p class="text-slate-700 font-medium">Si l'empresa ja té la Ref02 validada, al sBID apareixerà com a "Gestionada".</p>
+                            <div class="mt-2 p-2 border rounded-md bg-white">
+                                <img src="https://raw.githubusercontent.com/EscolaEmpresa/Practiques_empresa/e519958017b4ea96d22968b9ac228164d8c04e44/imatges/DadesEmpresa/Ref02Gestionada.png" alt="Imatge mostrant Ref02 com a gestionada" class="w-full rounded-md">
+                            </div>
+                        </div>
                     </div>
                     <div class="step">
-                        <h3 class="font-bold text-lg">4. Estudi homologat</h3>
-                        <p class="text-slate-600">El tutor visita l'empresa i homologa els estudis concrets que s'hi poden cursar, omplint el document <strong>Ref03</strong> o <strong>Ref03c</strong>.</p>
+                        <h3 class="font-bold text-lg">Verificació d'Estudis Homologats</h3>
+                        <p class="text-slate-600">Si no hem homologat cap estudi, o no està homologat l'estudi de l'alumne quan volem fer l'acord, ens sortirà un missatge d'avís com el de la imatge.</p>
+                        <div class="mt-2 p-2 border rounded-md bg-white">
+                             <img src="https://raw.githubusercontent.com/EscolaEmpresa/Practiques_empresa/e519958017b4ea96d22968b9ac228164d8c04e44/imatges/DadesEmpresa/EmpresaNohomologada%20Estudis(DualGeneral).png" alt="Avís d'estudi no homologat al sBID" class="w-full rounded-md">
+                        </div>
+                    </div>
+                    <div class="step">
+                        <h3 class="font-bold text-lg">4. Homologar els estudis (Ref03)</h3>
+                        <p class="text-slate-600 mb-4">El tutor visita l'empresa i homologa els estudis concrets que s'hi poden cursar omplint el document <strong>Ref03</strong> o <strong>Ref03c</strong>. El procediment al sBID és el següent:</p>
+                        <ol class="list-decimal list-inside space-y-6 text-slate-700">
+                            <li>
+                                Per afegir un estudi, donem al botó d'afegir.
+                                <div class="mt-2 p-2 border rounded-md bg-white"><img src="https://raw.githubusercontent.com/EscolaEmpresa/Practiques_empresa/e519958017b4ea96d22968b9ac228164d8c04e44/imatges/DadesEmpresa/EmpresaNohomologada%20Estudis(DualGeneral)_CentreTreball.png" alt="Botó per afegir un nou estudi a homologar" class="w-full rounded-md"></div>
+                            </li>
+                            <li>
+                                Cerquem l'especialitat i la creem. <br>
+                                <strong class="text-indigo-700">Atenció:</strong> S'ha de vigilar i seleccionar el cicle adequat i el negoci correcte. Per exemple, si és Dual General, ha de posar "(MOD GEN)".
+                                <div class="mt-2 p-2 border rounded-md bg-white"><img src="https://raw.githubusercontent.com/EscolaEmpresa/Practiques_empresa/e519958017b4ea96d22968b9ac228164d8c04e44/imatges/DadesEmpresa/EmpresaNohomologada%20Estudis(DualGeneral)_Llista.png" alt="Cercador i creació de l'especialitat" class="w-full rounded-md"></div>
+                            </li>
+                            <li>
+                                Un cop afegida, li donem a editar (la icona del llapis) i passem al punt 4.
+                                <div class="mt-2 p-2 border rounded-md bg-white"><img src="https://raw.githubusercontent.com/EscolaEmpresa/Practiques_empresa/e519958017b4ea96d22968b9ac228164d8c04e44/imatges/DadesEmpresa/EmpresaNohomologada%20Estudis(DualGeneral)_Editar.png" alt="Icona d'editar per modificar l'homologació de l'estudi" class="w-full rounded-md"></div>
+                            </li>
+                            <li>
+                                Si després de la visita a l'empresa tot és adequat, ho indiquem a la plataforma per finalitzar l'homologació de l'empresa en aquesta especialitat.
+                                <div class="mt-2 p-2 border rounded-md bg-white"><img src="https://raw.githubusercontent.com/EscolaEmpresa/Practiques_empresa/e519958017b4ea96d22968b9ac228164d8c04e44/imatges/DadesEmpresa/EmpresaNohomologada%20Estudis(DualGeneral)_Ref03Signada.png" alt="Formulari final per validar l'homologació de l'estudi" class="w-full rounded-md"></div>
+                            </li>
+                        </ol>
                     </div>
                 </div>
                  <div class="mt-6 bg-yellow-100 border-l-4 border-yellow-500 text-yellow-800 p-4 rounded-md">
@@ -98,5 +134,3 @@
     </div>
 </body>
 </html>
-
-
