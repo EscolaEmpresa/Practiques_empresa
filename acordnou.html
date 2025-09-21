@@ -24,6 +24,22 @@
         .back-link:hover {
             text-decoration: underline;
         }
+         .step {
+            border-left: 3px solid #4f46e5;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        .step:before {
+            content: '';
+            position: absolute;
+            left: -0.7rem;
+            top: 0;
+            width: 1.25rem;
+            height: 1.25rem;
+            border-radius: 9999px;
+            background-color: white;
+            border: 3px solid #4f46e5;
+        }
     </style>
 </head>
 <body class="p-8">
@@ -62,37 +78,93 @@
                 </ul>
             </div>
             <div class="card p-8">
-                <h2 class="text-2xl font-bold text-slate-800 mb-4">Procés de Creació de l'Acord</h2>
-                <p class="text-slate-600 mb-6">Hi ha dues vies per crear l'acord al sBID:</p>
-                <div>
-                    <h3 class="font-bold text-lg mb-2">Opció A: A través del Menú Principal</h3>
-                    <ol class="list-decimal list-inside text-slate-700 space-y-2 mb-4">
-                        <li>Navega pel menú lateral fins a l'opció per crear un nou acord/conveni.</li>
-                        <li>Assegura't d'estar al "negoci" adequat.</li>
-                        <div class="p-2 border rounded-lg bg-slate-50 my-2">
-                             <img src="https://raw.githubusercontent.com/EscolaEmpresa/Practiques_empresa/727cea72d31c60ebd9da02e7deda6216c642aa3d/imatges/SeleccioNegoci.png" alt="Selecció de negoci al sBID" class="w-full rounded-md">
-                        </div>
-                        <li>Ves a "Acord" i després a "Nou acord".</li>
-                         <div class="p-2 border rounded-lg bg-slate-50 my-2">
-                             <img src="https://raw.githubusercontent.com/EscolaEmpresa/Practiques_empresa/dad84cd16883d6b428ccfbf0523ff5478bf92a31/imatges/MenuNouAcord.png" alt="Menú per a crear un nou acord" class="w-full rounded-md">
-                        </div>
-                    </ol>
-                </div>
-                <div>
-                    <h3 class="font-bold text-lg mb-2">Opció B: A través de la Fitxa de l'Empresa</h3>
-                    <ol class="list-decimal list-inside text-slate-700 space-y-2">
-                        <li>Cerca l'empresa i el centre de treball específic.</li>
-                        <li>Accedeix a la fitxa del centre de treball.</li>
-                        <li>Dins de la gestió de "Responsables i tutors", trobaràs l'opció per crear un nou acord.
+                <h2 class="text-2xl font-bold text-slate-800 mb-4">Vies per Crear l'Acord</h2>
+                <p class="text-slate-600 mb-6">Hi ha tres vies principals per iniciar la creació d'un acord al sBID:</p>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">Opció A: A través del Menú Principal</h3>
+                        <ol class="list-decimal list-inside text-slate-700 space-y-2 mb-4">
+                            <li>Navega pel menú lateral fins a l'opció per crear un nou acord/conveni.</li>
+                            <li>Assegura't d'estar al "negoci" adequat.</li>
                             <div class="p-2 border rounded-lg bg-slate-50 my-2">
-                                <img src="https://raw.githubusercontent.com/EscolaEmpresa/Practiques_empresa/01a71934a1a8f8008db9fba12ace01da5131edc5/imatges/NouAcordDesDeResponsable.png" alt="Opció per crear un nou acord des de la fitxa de responsables" class="w-full rounded-md">
-                           </div>
-                        </li>
-                    </ol>
+                                <img src="https://raw.githubusercontent.com/EscolaEmpresa/Practiques_empresa/727cea72d31c60ebd9da02e7deda6216c642aa3d/imatges/SeleccioNegoci.png" alt="Selecció de negoci al sBID" class="w-full rounded-md">
+                            </div>
+                            <li>Ves a "Acord" i després a "Nou acord".</li>
+                            <div class="p-2 border rounded-lg bg-slate-50 my-2">
+                                <img src="https://raw.githubusercontent.com/EscolaEmpresa/Practiques_empresa/dad84cd16883d6b428ccfbf0523ff5478bf92a31/imatges/MenuNouAcord.png" alt="Menú per a crear un nou acord" class="w-full rounded-md">
+                            </div>
+                        </ol>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">Opció B: A través de la Fitxa de l'Empresa</h3>
+                        <ol class="list-decimal list-inside text-slate-700 space-y-2">
+                            <li>Cerca l'empresa i el centre de treball específic.</li>
+                            <li>Accedeix a la fitxa del centre de treball.</li>
+                            <li>Dins de la gestió de "Responsables i tutors", trobaràs l'opció per crear un nou acord.
+                                <div class="p-2 border rounded-lg bg-slate-50 my-2">
+                                    <img src="https://raw.githubusercontent.com/EscolaEmpresa/Practiques_empresa/01a71934a1a8f8008db9fba12ace01da5131edc5/imatges/NouAcordDesDeResponsable.png" alt="Opció per crear un nou acord des de la fitxa de responsables" class="w-full rounded-md">
+                               </div>
+                            </li>
+                        </ol>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">Opció C: Des del Quadern de l'Alumne</h3>
+                        <ol class="list-decimal list-inside text-slate-700 space-y-2">
+                             <li>Cerca l'alumne i accedeix al seu quadern de pràctiques.</li>
+                             <li>A la secció d'acords, trobaràs l'opció per crear-ne un de nou. Aquesta és sovint la via més directa.</li>
+                              <div class="p-2 border rounded-lg bg-slate-50 my-2">
+                                    <img src="https://raw.githubusercontent.com/EscolaEmpresa/Practiques_empresa/bd224675c78d5c30057e6848793b1579f2cd81ae/imatges/NouAcord/NouAcordDesDeQuadern.png" alt="Opció per crear acord des del quadern de l'alumne" class="w-full rounded-md">
+                               </div>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+             <div class="card p-8">
+                <h2 class="text-2xl font-bold text-slate-800 mb-6">Procés de Creació de l'Acord</h2>
+                <div class="space-y-8">
+                     <div class="step">
+                        <h3 class="font-bold text-lg">1. Dades Inicials: Seguretat Social</h3>
+                        <p class="text-slate-600">De les primeres dades que se'ns demana (algunes poden estar ja seleccionades si venim del responsable) és qui assumeix les obligacions de la Seguretat Social.</p>
+                        <div class="mt-2 p-4 bg-yellow-100 border-l-4 border-yellow-500 text-yellow-800 rounded-md">
+                             <p class="font-bold">Important:</p>
+                             <ul class="list-disc list-inside mt-2 text-sm">
+                                <li>Si l'empresa no ho vol fer, seleccioneu "Centre de Formació". De moment, el Departament ho permet.</li>
+                                <li><strong>No cliqueu "Empresa col·laboradora"</strong> si ella no ho sap expressament, ja que és un focus de problemes.</li>
+                            </ul>
+                        </div>
+                        <div class="mt-4 p-2 border rounded-lg bg-slate-50">
+                            <img src="https://raw.githubusercontent.com/EscolaEmpresa/Practiques_empresa/bd224675c78d5c30057e6848793b1579f2cd81ae/imatges/NouAcord/NouAcordDesDeQuadern_2.png" alt="Selector per a les obligacions de la Seguretat Social" class="w-full rounded-md">
+                        </div>
+                    </div>
+                     <div class="step">
+                        <h3 class="font-bold text-lg">2. Dades Generals de l'Acord</h3>
+                        <p class="text-slate-600">A continuació, s'han d'omplir altres dades generals. És crucial seleccionar bé el <strong>tipus d'acord</strong>:</p>
+                         <ul class="list-disc list-inside text-slate-700 mt-2 space-y-1 text-sm">
+                            <li><strong>Estàndard:</strong> Per a la majoria de casos.</li>
+                            <li><strong>Intensiu:</strong> Quan l'estada superi les 4 hores diàries.</li>
+                            <li><strong>Especial:</strong> Si inclou festius, agost, o altres casuístiques fora del normal.</li>
+                        </ul>
+                         <div class="mt-4 p-2 border rounded-lg bg-slate-50">
+                            <img src="https://raw.githubusercontent.com/EscolaEmpresa/Practiques_empresa/bd224675c78d5c30057e6848793b1579f2cd81ae/imatges/NouAcord/NouAcordDades.png" alt="Formulari de dades generals de l'acord" class="w-full rounded-md">
+                        </div>
+                    </div>
+                     <div class="step">
+                        <h3 class="font-bold text-lg">3. Assignació del Tutor d'Empresa</h3>
+                        <p class="text-slate-600">Afegim el tutor a l'empresa per no tenir problemes en els punts posteriors. Després ja podrem afegir el període de pràctiques.</p>
+                         <div class="mt-4 p-2 border rounded-lg bg-slate-50">
+                            <img src="https://raw.githubusercontent.com/EscolaEmpresa/Practiques_empresa/bd224675c78d5c30057e6848793b1579f2cd81ae/imatges/NouAcord/NouAcordPeriode.png" alt="Assignació del tutor i opció per afegir període" class="w-full rounded-md">
+                        </div>
+                    </div>
+                     <div class="step">
+                        <h3 class="font-bold text-lg">4. Definició del Període</h3>
+                        <p class="text-slate-600">Indiquem el període de l'acord, les dates i l'horari de cada un dels trams, en cas que tinguem diferents horaris en funció de les dates (per exemple, 8 hores quan no hi ha classes).</p>
+                         <div class="mt-4 p-2 border rounded-lg bg-slate-50">
+                            <img src="https://raw.githubusercontent.com/EscolaEmpresa/Practiques_empresa/bd224675c78d5c30057e6848793b1579f2cd81ae/imatges/NouAcord/NouAcordPeriode2.png" alt="Formulari per indicar el període i horari de l'acord" class="w-full rounded-md">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </body>
 </html>
-
