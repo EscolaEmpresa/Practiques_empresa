@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ca" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procediment: Seguiment de l'Acord</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f1f5f9; /* Slate 100 */
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            border: 1px solid #e2e8f0; /* Slate 200 */
+        }
+        .back-link {
+            color: #4f46e5;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .step {
+            border-left: 3px solid #4f46e5;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        .step:before {
+            content: '';
+            position: absolute;
+            left: -0.7rem;
+            top: 0;
+            width: 1.25rem;
+            height: 1.25rem;
+            border-radius: 9999px;
+            background-color: white;
+            border: 3px solid #4f46e5;
+        }
+    </style>
+</head>
+<body class="p-8">
+    <div class="max-w-4xl mx-auto">
+        <div class="mb-8">
+            <a href="fer-practiques.html" class="back-link">← Tornar a "Fer les Pràctiques"</a>
+        </div>
+        <div class="text-center">
+            <h1 class="text-4xl font-extrabold text-slate-800">Fer el seguiment d’un acord en curs</h1>
+            <p class="mt-4 text-lg text-slate-600">Durant l’estada a l’empresa de l’alumne, hem d’anar fent un seguiment d’aquesta. Encara que podem preguntar i saber exactament com va l’estada, a partir de la informació del tutor de l’empresa i de l’alumne, també hem de fer una sèrie de registres al sBID.</p>
+        </div>
+
+        <div class="mt-12 space-y-8">
+            <div class="card p-8">
+                <h2 class="text-2xl font-bold text-slate-800 mb-4">Tasques de Seguiment</h2>
+                <p class="text-slate-600 mb-6">Les tasques principals de registre al sBID són:</p>
+                <ul class="list-disc list-inside text-slate-700 space-y-2">
+                    <li>Contacte inicial</li>
+                    <li>Contacte/s parcial/s</li>
+                    <li>Contacte final</li>
+                    <li>Informes mensuals</li>
+                    <li>Verificar que han fet les enquestes</li>
+                </ul>
+            </div>
+
+            <div class="card p-8">
+                <h2 class="text-2xl font-bold text-slate-800 mb-4">Opcions de Gestió de l'Acord</h2>
+                <p class="text-slate-600 mb-6">Agafarem un acord de referència per a explicar-ho per sobre. En la gestió del quadern, veurem aquestes opcions:</p>
+                 <div class="p-2 border rounded-lg bg-slate-50 my-2">
+                     <img src="https://raw.githubusercontent.com/EscolaEmpresa/Practiques_empresa/main/imatges/SeguimentAcord/OpcionsAcord.png" alt="Opcions de gestió de l'acord" class="w-full rounded-md">
+                </div>
+                <div class="space-y-6 mt-6">
+                    <div class="step">
+                        <h3 class="font-bold text-lg">1. Acord</h3>
+                        <p class="text-slate-600">Si li cliquem a "Acord", veurem l’acord en qüestió. És només de caràcter informatiu, no es pot modificar. Per a modificar-ho caldria finalitzar-ho i fer-ne un de nou.</p>
+                    </div>
+                    <div class="step">
+                        <h3 class="font-bold text-lg">2. Quadern</h3>
+                        <p class="text-slate-600">Anirem al quadern de l'alumne, on es veuran els diferents dossiers (un dossier són els acords a la mateixa empresa). Aquí podrem fer reconeixements per junta, per hores treballades, etc.</p>
+                    </div>
+                    <div class="step">
+                        <h3 class="font-bold text-lg">3. Seguiment</h3>
+                        <p class="text-slate-600">Mostra la majoria de tasques a fer, com poden ser les enquestes o els contactes de valoració (inicial, parcials o final). També es pot veure el pla d’activitats per si el volem modificar.</p>
+                    </div>
+                    <div class="step">
+                        <h3 class="font-bold text-lg">4. Agenda</h3>
+                        <p class="text-slate-600">Ens portarà als informes mensuals i a una agenda mensual en la qual es poden veure les activitats dia a dia del mes.</p>
+                    </div>
+                </div>
+            </div>
+
+             <div class="card p-8">
+                <h2 class="text-2xl font-bold text-slate-800 mb-4">Gestió d'Informes Mensuals</h2>
+                <p class="text-slate-600 mb-6">Des de l'opció "Agenda", podem veure els informes periòdics. L'estat de cada informe s'indica per colors:</p>
+                 <div class="p-2 border rounded-lg bg-slate-50 my-2">
+                     <img src="https://raw.githubusercontent.com/EscolaEmpresa/Practiques_empresa/main/imatges/SeguimentAcord/AgendaInformes.png" alt="Agenda i informes mensuals" class="w-full rounded-md">
+                </div>
+                 <ul class="list-disc list-inside text-slate-700 space-y-2 mt-4">
+                    <li><strong class="text-red-600">Vermell:</strong> L'alumne no l'ha valorat.</li>
+                    <li><strong class="text-orange-500">Taronja:</strong> L'alumne ha valorat, però falta la valoració de l'empresa.</li>
+                    <li><strong class="text-blue-600">Blau:</strong> Alumne i empresa han valorat. El tutor del centre ha de validar les valoracions.</li>
+                </ul>
+                <p class="text-slate-600 mt-4">Per validar-ho, hem de clicar a l’informe i donar-li a "Signar".</p>
+            </div>
+
+            <div class="card p-8">
+                <h2 class="text-2xl font-bold text-slate-800 mb-4">Gestió de Contactes (Inicial, Parcial, Final)</h2>
+                <p class="text-slate-600 mb-6">Els contactes surten a l’agenda del tutor. Si no els veiem, podem entrar-hi des de "Seguiment" > "Gestionar contactes".</p>
+                <div class="p-2 border rounded-lg bg-slate-50 my-2">
+                     <img src="https://raw.githubusercontent.com/EscolaEmpresa/Practiques_empresa/main/imatges/SeguimentAcord/GestioContactes.png" alt="Pantalla de gestió de contactes" class="w-full rounded-md">
+                </div>
+                <p class="text-slate-600 mb-4">En aquest cas el contacte inicial ja està fet. Si no, hauríem de donar a "Gestionar", omplir les dades i "Emmagatzemar".</p>
+                
+                <h3 class="font-bold text-lg mt-6 mb-4">Contactes Parcials i Finals</h3>
+                <p class="text-slate-600 mb-4">Aquests són més complicats, ja que depenen de l'emplenament previ per part del tutor d'empresa. Són els més pesats per a ells.</p>
+                <p class="text-slate-600 mb-4">Entrem per exemple al parcial (a meitat d'estada, o cada dos mesos en Dual Intensiva). Han d’emplenar les diferents pestanyes.</p>
+                <div class="p-2 border rounded-lg bg-slate-50 my-2">
+                     <img src="https://raw.githubusercontent.com/EscolaEmpresa/Practiques_empresa/main/imatges/SeguimentAcord/ContacteParcial_1.png" alt="Pestanyes del contacte parcial" class="w-full rounded-md">
+                </div>
+                <p class="text-slate-600 mb-4">Hauria de sortir l’opció de "Copiar la valoració de l’empresa". Si no surt, és que el tutor d'empresa encara no l'ha fet. Un cop feta, copiem la valoració (o la modifiquem si cal), indiquem el tipus del contacte (visita, telefònica…) i signem.</p>
+                <div class="p-2 border rounded-lg bg-slate-50 my-2">
+                     <img src="https://raw.githubusercontent.com/EscolaEmpresa/Practiques_empresa/main/imatges/SeguimentAcord/ContacteParcial_2.png" alt="Signatura i tipus de contacte" class="w-full rounded-md">
+                </div>
+                 <p class="text-slate-600 mt-4 font-semibold">Aquestes són les tasques de seguiment principals. Hi ha més tasques quan finalitzem els quaderns.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
