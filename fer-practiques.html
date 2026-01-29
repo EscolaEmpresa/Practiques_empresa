@@ -30,6 +30,17 @@
  		.back-link:hover { 
  			text-decoration: underline; 
  		} 
+        /* Badge per a "En construcció" */
+        .badge-wip {
+            background-color: #fef3c7;
+            color: #92400e;
+            padding: 0.25rem 0.5rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-left: 0.5rem;
+            vertical-align: middle;
+        }
  	</style> 
  </head> 
  <body class="p-8"> 
@@ -62,7 +73,19 @@
             <a href="seguiment-acord.html" class="card card-link p-6 block"> 
  				<h3 class="text-xl font-bold text-slate-800 mb-2">5. Seguiment de l'Acord</h3> 
  				<p class="text-slate-600 text-sm">Guia sobre com realitzar el seguiment de l'estada (contactes, informes mensuals...) un cop l'acord està en curs.</p> 
- 			</a> 
+ 			</a>
+            <!-- Noves opcions afegides -->
+            <a href="modificar-acord.html" class="card card-link p-6 block relative"> 
+                <div class="flex items-center mb-2">
+                    <h3 class="text-xl font-bold text-slate-800">6. Modificar l'Acord</h3>
+                    <span class="badge-wip">En construcció</span>
+                </div>
+ 				<p class="text-slate-600 text-sm">Procediment per realitzar canvis en un acord ja existent. (Pròximament)</p> 
+ 			</a>
+             <a href="tancar-acord.html" class="card card-link p-6 block"> 
+ 				<h3 class="text-xl font-bold text-slate-800 mb-2">7. Tancar l'Acord</h3> 
+ 				<p class="text-slate-600 text-sm">Gestions finals per tancar el quadern de pràctiques, qualificar i generar la documentació final.</p> 
+ 			</a>
  		</div> 
  	</div> 
  </body> 
