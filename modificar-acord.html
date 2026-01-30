@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ca" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar un acord</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f1f5f9;
+        }
+        .content-card {
+            background-color: white;
+            border-radius: 0.75rem;
+            padding: 2.5rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            border: 1px solid #e2e8f0;
+            margin-bottom: 2rem;
+        }
+        .alert-box {
+            background-color: #fff7ed;
+            border-left: 5px solid #f97316;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 0.5rem;
+            color: #9a3412;
+        }
+        .warning-box {
+            background-color: #fef2f2; /* Red 50 */
+            border-left: 5px solid #ef4444; /* Red 500 */
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 0.5rem;
+            color: #991b1b; /* Red 800 */
+        }
+        .step-card {
+            background-color: #f8fafc;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border: 1px solid #e2e8f0;
+        }
+        .back-link {
+            color: #4f46e5;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #1e293b;
+            margin-bottom: 1rem;
+        }
+        h3 {
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            color: #475569;
+            line-height: 1.6;
+        }
+        strong {
+            color: #334155;
+            font-weight: 700;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+            border: 1px solid #cbd5e1;
+            margin: 1.5rem auto;
+            display: block;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+        }
+        .img-placeholder {
+            background-color: #f8fafc;
+            border: 2px dashed #94a3b8;
+            padding: 2rem;
+            text-align: center;
+            color: #64748b;
+            margin: 1.5rem 0;
+            border-radius: 0.5rem;
+        }
+        ul { 
+            list-style-type: disc; 
+            margin-left: 1.5rem; 
+            margin-bottom: 1rem; 
+            color: #475569;
+        }
+    </style>
+</head>
+<body class="p-8">
+    <div class="max-w-4xl mx-auto">
+        <div class="mb-8">
+            <a href="fer-practiques.html" class="back-link">← Tornar a Fer les Pràctiques</a>
+        </div>
+
+        <div class="content-card">
+            <h1 class="text-3xl font-extrabold text-slate-800 mb-6 text-center">Modificar l'Acord</h1>
+            
+            <div class="alert-box">
+                <h3 class="text-lg flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                    </svg>
+                    Important: Els acords no es poden editar directament
+                </h3>
+                <p class="mb-0 mt-2">
+                    Com que els acords són documents legals signats, <strong>no és possible modificar-los</strong> un cop formalitzats. Per fer qualsevol canvi, el procediment sempre comença per <strong>finalitzar l'acord actual</strong>.
+                </p>
+            </div>
+
+            <!-- Avís Crític sobre Dates -->
+            <div class="warning-box">
+                <h3 class="text-lg flex items-center text-red-800">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    Atenció: La data de finalització no pot ser retroactiva
+                </h3>
+                <p class="text-red-900 font-semibold mt-2">
+                    La finalització de l'acord s'ha de fer sempre amb antelació.
+                </p>
+                <p class="text-red-800 mb-0">
+                    Si el dia ja ha passat, el sistema <strong>no permetrà modificar les dades</strong> ni finalitzar l'acord "cap endarrere". Assegureu-vos de gestionar qualsevol canvi abans que la data efectiva arribi.
+                </p>
+            </div>
+
+            <div class="step-card">
+                <h2>Què he de fer després de finalitzar?</h2>
+                <p>Un cop finalitzat l'acord actual, haureu de triar entre fer una <strong>Pròrroga</strong> o un <strong>Nou Acord</strong> segons el tipus de modificació:</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                    <!-- Opció A: Pròrroga -->
+                    <div class="bg-blue-50 p-5 rounded-lg border border-blue-200">
+                        <h3 class="text-blue-900 text-xl mb-3">Opció A: Pròrroga</h3>
+                        <p class="text-sm text-blue-800 font-semibold mb-2">Utilitzeu-la per a canvis operatius:</p>
+                        <ul class="text-blue-900 list-disc ml-4 space-y-1">
+                            <li>Modificació de l'<strong>horari</strong>.</li>
+                            <li>Ampliació del calendari (sempre que estigui dins dels límits).</li>
+                            <li>Ajustos menors en el pla.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Opció B: Nou Acord -->
+                    <div class="bg-indigo-50 p-5 rounded-lg border border-indigo-200">
+                        <h3 class="text-indigo-900 text-xl mb-3">Opció B: Nou Acord</h3>
+                        <p class="text-sm text-indigo-800 font-semibold mb-2">Necessari per a canvis estructurals:</p>
+                        <ul class="text-indigo-900 list-disc ml-4 space-y-1">
+                            <li>Canvi en el <strong>pagament de la Seguretat Social</strong>.</li>
+                            <li>Canvi de tutor legal o representant (si afecta la signatura).</li>
+                            <li>Modificacions profundes de les condicions.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="text-2xl font-bold text-slate-800 mt-8 mb-4">Opcions de finalització al sistema</h2>
+            <p>A la següent imatge podeu veure el menú que apareix en finalitzar un acord, on podreu seleccionar si voleu fer una pròrroga, un nou acord o simplement finalitzar-lo:</p>
+
+            <img src="https://github.com/EscolaEmpresa/Practiques_empresa/blob/main/imatges/modificar_acord/modificar_1.png?raw=true" alt="Opcions en finalitzar un acord" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+            <div class="img-placeholder" style="display:none;">
+                <p><strong>Imatge 1:</strong> Captura de pantalla mostrant el menú de "Finalitzar Acord" amb les opcions disponibles (pròrroga, nou acord, etc.). <br>Nom esperat: <code>imatges/modificar_acord/modificar_1.png</code></p>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
