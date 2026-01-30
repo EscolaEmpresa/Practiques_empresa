@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ca" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tancar quadern de pràctiques</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f1f5f9;
+        }
+        .content-card {
+            background-color: white;
+            border-radius: 0.75rem;
+            padding: 2.5rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            border: 1px solid #e2e8f0;
+        }
+        .back-link {
+            color: #4f46e5;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #1e293b;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            color: #475569;
+            line-height: 1.6;
+        }
+        strong {
+            color: #334155;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+            border: 1px solid #cbd5e1;
+            margin: 1.5rem 0;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+        }
+        .img-placeholder {
+            background-color: #f8fafc;
+            border: 2px dashed #94a3b8;
+            padding: 2rem;
+            text-align: center;
+            color: #64748b;
+            margin: 1.5rem 0;
+            border-radius: 0.5rem;
+        }
+        .info-box {
+            background-color: #eff6ff;
+            border-left: 4px solid #3b82f6;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            color: #1e40af;
+            font-size: 0.95rem;
+        }
+        ul, ol {
+            margin-bottom: 1rem;
+            margin-left: 1.5rem;
+            color: #475569;
+        }
+        ul { list-style-type: disc; }
+        ol { list-style-type: decimal; }
+    </style>
+</head>
+<body class="p-8">
+    <div class="max-w-4xl mx-auto">
+        <div class="mb-8">
+            <a href="fer-practiques.html" class="back-link">← Tornar a Fer les Pràctiques</a>
+        </div>
+
+        <div class="content-card">
+            <h1 class="text-3xl font-extrabold text-slate-800 mb-6">Tancar el quadern de pràctiques</h1>
+            
+            <p>Un cop finalitzades les hores de pràctiques, cal realitzar una sèrie de gestions administratives per donar per conclòs l'expedient de l'alumne. Si no es realitzen aquests passos, els acords romandran en estat <strong>"Finalitzat"</strong> però no <strong>"Tancat"</strong>.</p>
+            
+            <img src="images/tancar_1.png" alt="Llistat d'acords amb estat finalitzat però no tancat" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+            <div class="img-placeholder" style="display:none;">
+                <p><strong>Imatge 1:</strong> Captura del llistat d'acords en estat "Finalitzat" (nom fitxer: <code>images/tancar_1.png</code>)</p>
+            </div>
+
+            <p>Per procedir al tancament, és imprescindible que tots els tràmits previs estiguin completats. En cas contrari, el sistema no permetrà finalitzar els apartats.</p>
+
+            <h2>1. Requisits previs de l'Alumne</h2>
+            <p>L’alumne ha d’haver completat les següents accions:</p>
+            <ul class="list-disc pl-5 mb-4 space-y-2">
+                <li>Introducció de la totalitat de les hores realitzades.</li>
+                <li>Valoració de tots els mesos.</li>
+                <li>Emplenament de l'enquesta final.</li>
+            </ul>
+
+            <img src="images/tancar_2.png" alt="Informes periòdics en verd" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+            <div class="img-placeholder" style="display:none;">
+                <p><strong>Imatge 2:</strong> Captura dels informes periòdics en verd (nom fitxer: <code>images/tancar_2.png</code>)</p>
+            </div>
+
+            <p>A la imatge anterior s'observa com tots els informes periòdics apareixen en verd, indicant que alumne, empresa i tutor han validat les dades correctament.</p>
+            
+            <h2>2. Requisits previs de l'Empresa</h2>
+            <p>El tutor d'empresa ha de tenir totes les tasques al dia:</p>
+            <ul class="list-disc pl-5 mb-4 space-y-2">
+                <li>Valoració de tots els mesos.</li>
+                <li>Realització de les valoracions parcials i la valoració final.</li>
+                <li>Emplenament de l'enquesta de l'empresa.</li>
+            </ul>
+            <div class="info-box">
+                Nota: Si l’alumne no ha emplenat totes les hores i valorat els mesos, l'empresa no podrà continuar amb les seves tasques de validació.
+            </div>
+
+            <img src="images/tancar_3.png" alt="Pla d'activitats i seguiment" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+            <div class="img-placeholder" style="display:none;">
+                <p><strong>Imatge 3:</strong> Captura dels panells de Pla d'activitats, Seguiment, Valoració i Homologació (nom fitxer: <code>images/tancar_3.png</code>)</p>
+            </div>
+
+            <p>En aquest panell es mostra l'estat òptim: el qüestionari i els contactes de seguiment estan gestionats. <strong>Atenció:</strong> Si l'empresa ha omplert les dades però nosaltres (tutors del centre) no les hem gestionat/validat, apareixeran guions en lloc de l'estat complet (com es veu a l'apartat d'homologació de la imatge).</p>
+
+            <h2>3. Tasques del Tutor del Centre</h2>
+            <p>Com a tutors, abans de tancar, hem d'assegurar-nos de:</p>
+            <ol class="list-decimal pl-5 mb-4 space-y-2">
+                <li>Validar tots els mesos.</li>
+                <li>Gestionar els contactes de seguiment.</li>
+                <li><strong>Rehomologar el centre de treball:</strong> Un pas sovint oblidat però necessari per tancar l'acord.</li>
+            </ol>
+
+            <img src="images/tancar_4.png" alt="Detall de la rehomologació i valoració del tutor" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+            <div class="img-placeholder" style="display:none;">
+                <p><strong>Imatge 4:</strong> Captura del detall de rehomologació i validació del tutor (nom fitxer: <code>images/tancar_4.png</code>)</p>
+            </div>
+
+            <h2>4. Gestió d'Hores i Reconeixements</h2>
+            <p>Un cop completats els passos anteriors, podem procedir. Tanmateix, cal tenir en compte la casuística de les hores:</p>
+            <p>Les hores de FCT (Dual General) no es poden reconèixer directament a la Dual Intensiva. En canvi, si una <strong>Dual Intensiva</strong> es finalitza anticipadament, les hores realitzades es poden traspassar a Dual General.</p>
+            <p>En aquest cas concret, no es tracta d'un reconeixement tècnic, sinó d'una <strong>reducció d’hores</strong>, tal com es mostra al desplegable:</p>
+
+            <img src="images/tancar_5.png" alt="Desplegable de reducció d'hores" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+            <div class="img-placeholder" style="display:none;">
+                <p><strong>Imatge 5:</strong> Captura del desplegable "Tipus" seleccionant reducció d'hores (nom fitxer: <code>images/tancar_5.png</code>)</p>
+            </div>
+
+            <h2>5. Qualificació del Quadern</h2>
+            <p>Amb tota la documentació en ordre i les hores quadrades, s'habilitarà l'opció per a la qualificació final del quadern.</p>
+
+            <img src="images/tancar_6.png" alt="Pantalla de qualificació global de l'FPCT" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+            <div class="img-placeholder" style="display:none;">
+                <p><strong>Imatge 6:</strong> Captura de la pantalla de qualificació (nom fitxer: <code>images/tancar_6.png</code>)</p>
+            </div>
+            <p class="text-sm text-slate-500 italic">Exemple de quadern per qualificar (interfície similar per a FCT i Dual).</p>
+
+            <p>Un cop qualifiquem, es generarà la documentació final:</p>
+            <ul class="list-disc pl-5 mb-4 space-y-2">
+                <li><strong>REF22:</strong> Document que cal imprimir. Substitueix el conveni i pla d’activitats provisional pels definitius amb totes les signatures.</li>
+                <li><strong>REF19:</strong> Informe valoratiu. Cal signar-lo i <strong>segellar-lo</strong>.</li>
+            </ul>
+
+            <img src="images/tancar_7.png" alt="Pantalla amb el resultat final i botons REF" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+            <div class="img-placeholder" style="display:none;">
+                <p><strong>Imatge 7:</strong> Captura de la pantalla "Qualificació Estada a l'Empresa" amb els botons REF19, REF20, REF22 (nom fitxer: <code>images/tancar_7.png</code>)</p>
+            </div>
+
+            <div class="info-box">
+                <strong>Recomanació:</strong> Imprimiu una còpia addicional de la <strong>REF19</strong> per lliurar-la a l'alumne, degudament signada i segellada pel centre.
+            </div>
+
+            <h2>Resultat Final</h2>
+            <p>Finalment, l'acord passarà a l'estat <strong>"Tancat"</strong>. L'objectiu és tenir tots els alumnes de la tutoria en aquesta situació al final de curs, com es mostra a l'exemple:</p>
+
+            <img src="images/tancar_8.png" alt="Llistat final amb acords tancats" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+            <div class="img-placeholder" style="display:none;">
+                <p><strong>Imatge 8:</strong> Captura del llistat final amb els acords en estat "Tancat" (nom fitxer: <code>images/tancar_8.png</code>)</p>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
