@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ca" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incidències, Baixes i Absències</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f1f5f9;
+        }
+        .content-card {
+            background-color: white;
+            border-radius: 0.75rem;
+            padding: 2.5rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            border: 1px solid #e2e8f0;
+            margin-bottom: 2rem;
+        }
+        .step-card {
+            background-color: #f8fafc;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border: 1px solid #e2e8f0;
+        }
+        .contact-box {
+            background-color: #eff6ff;
+            border-left: 4px solid #3b82f6;
+            padding: 1.25rem;
+            border-radius: 0.5rem;
+            color: #1e40af;
+            margin-bottom: 2rem;
+            font-weight: 500;
+        }
+        .warning-box {
+            background-color: #fef2f2;
+            border-left: 4px solid #ef4444;
+            padding: 1.25rem;
+            border-radius: 0.5rem;
+            color: #991b1b;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+        .back-link {
+            color: #4f46e5;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #1e293b;
+            margin-bottom: 1rem;
+        }
+        h3 {
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            color: #475569;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body class="p-8">
+    <div class="max-w-4xl mx-auto">
+        <div class="mb-8">
+            <a href="fer-practiques.html" class="back-link">← Tornar a Fer les Pràctiques</a>
+        </div>
+
+        <div class="content-card">
+            <h1 class="text-3xl font-extrabold text-slate-800 mb-6 text-center">Incidències, Baixes i Absències</h1>
+            <p class="text-center text-slate-600 mb-8">Gestió de l'afiliació i cotització a la Seguretat Social en cas d'accidents laborals, malalties o altres absències de l'alumnat.</p>
+
+            <div class="contact-box flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                <div>
+                    <span class="block font-bold mb-1">Comunicacions a la Seguretat Social</span>
+                    Sempre que el protocol ho requereixi, les incidències s'han de comunicar a la bústia: <br>
+                    <a href="mailto:cotitzacio.educacio@gencat.cat" class="underline font-bold text-blue-800">cotitzacio.educacio@gencat.cat</a>
+                </div>
+            </div>
+
+            <hr class="my-8 border-slate-200">
+
+            <h2>1. Com procedir davant Accidents o Malalties?</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 mb-8">
+                <!-- Dual General -->
+                <div class="border border-slate-200 rounded-lg overflow-hidden">
+                    <div class="bg-slate-100 p-4 border-b border-slate-200">
+                        <h3 class="text-slate-800 text-lg mb-0 text-center">Dual General <br><span class="text-sm text-slate-500 font-normal">(Pràctiques NO Remunerades)</span></h3>
+                    </div>
+                    <div class="p-5">
+                        <div class="mb-5">
+                            <h4 class="font-bold text-red-700 mb-2 border-b border-red-100 pb-1">Accident de Treball</h4>
+                            <ul class="list-disc ml-4 text-sm text-slate-700 space-y-2">
+                                <li>Cal comunicar <strong>sempre</strong> l'accident a l'equip de cotització (correu superior), encara que no generi baixa mèdica.</li>
+                                <li><strong>Si l'alumne acudeix a un centre mèdic:</strong>
+                                    <ol class="list-decimal ml-4 mt-1 space-y-1 text-slate-600">
+                                        <li>Ha d'emplenar el butlletí d'assistència.</li>
+                                        <li>És molt important que el metge tramiti la baixa com a <em>accident de treball</em> i no com a malaltia comuna.</li>
+                                    </ol>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-amber-600 mb-2 border-b border-amber-100 pb-1">Malaltia comuna o Accident no laboral</h4>
+                            <ul class="list-disc ml-4 text-sm text-slate-700 space-y-2">
+                                <li><strong>No cal fer cap gestió</strong> pel que fa a l'afiliació ni cotització a la Seguretat Social.</li>
+                                <li>La incidència s'ha de registrar únicament a l'agenda de l'alumnat (BID).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Erasmus+ -->
+                <div class="border border-slate-200 rounded-lg overflow-hidden">
+                    <div class="bg-blue-50 p-4 border-b border-blue-100">
+                        <h3 class="text-blue-900 text-lg mb-0 text-center">ERASMUS+ <br><span class="text-sm text-blue-600 font-normal">(Pràctiques Remunerades)</span></h3>
+                    </div>
+                    <div class="p-5 flex items-center h-full pb-16">
+                        <ul class="list-disc ml-4 text-sm text-slate-700 space-y-2">
+                            <li>En <strong>tots els casos</strong> cal que es comuniqui al correu indicat.</li>
+                            <li>S'ha de comunicar hi hagi baixa o no, independentment de la causa (això inclou l'accident laboral sense baixa mèdica).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-8 border-slate-200">
+
+            <h2>2. Registre d'Absències a l'Agenda (BID)</h2>
+            <p>Independentment del correu a la Seguretat Social, <strong>qualsevol incidència (baixa i accident) ha de quedar reflectida a l'agenda de l'alumnat (BID)</strong>. A continuació, detallem com s'enregistren els dies:</p>
+
+            <div class="step-card mt-6">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="md:col-span-1 bg-white p-4 rounded border border-slate-200">
+                        <h4 class="font-bold text-slate-800 mb-2 text-center border-b pb-2">Dies d'estada</h4>
+                        <p class="text-sm text-slate-600 mb-0"><strong>Dies reals d'estada a l'empresa:</strong> Dies en què l'alumnat ha assistit efectivament a l'empresa.</p>
+                    </div>
+                    
+                    <div class="md:col-span-2 bg-white p-4 rounded border border-slate-200">
+                        <h4 class="font-bold text-slate-800 mb-3 border-b pb-2">Dies d'absència (Opcions del BID)</h4>
+                        <ul class="text-sm text-slate-700 space-y-1.5 list-none pl-0">
+                            <li><span class="font-semibold text-slate-800">Baixa mèdica per Accident de Treball:</span> Absència per accident laboral.</li>
+                            <li><span class="font-semibold text-slate-800">Baixa mèdica (malaltia o accident comú):</span> Absència per baixa per malaltia comuna.</li>
+                            <li><span class="font-semibold text-slate-800">Motius mèdics:</span> Absències per visita mèdica o similar.</li>
+                            <li><span class="font-semibold text-slate-800">Permisos per risc:</span> Durant l'embaràs o durant la lactància natural.</li>
+                            <li><span class="font-semibold text-slate-800">Permís per naixement i cura de menor.</span></li>
+                            <li><span class="font-semibold text-slate-800">Personals / Per força major.</span></li>
+                            <li><span class="font-semibold text-slate-800">Relacionat amb els estudis / Vacances escolars.</span></li>
+                            <li><span class="font-semibold text-slate-800">Motivat per l'empresa / Festius.</span></li>
+                            <li><span class="font-semibold text-slate-800">Altres:</span> Absències no incloses (Ex: acord formalitzat però l'alumnat no assisteix).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="warning-box mt-6 flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                </svg>
+                <p class="mb-0 text-sm">
+                    <strong>Recordatori:</strong> Qualsevol incidència ha de quedar enregistrada al BID. Només cal enviar el correu a Cotització seguint els criteris de l'apartat 1 (sempre per Accidents de Treball, i depenent de la modalitat per malalties).
+                </p>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
