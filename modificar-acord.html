@@ -27,12 +27,12 @@
             color: #9a3412;
         }
         .warning-box {
-            background-color: #fef2f2; /* Red 50 */
-            border-left: 5px solid #ef4444; /* Red 500 */
+            background-color: #fef2f2; 
+            border-left: 5px solid #ef4444; 
             padding: 1.5rem;
             margin-bottom: 2rem;
             border-radius: 0.5rem;
-            color: #991b1b; /* Red 800 */
+            color: #991b1b; 
         }
         .step-card {
             background-color: #f8fafc;
@@ -41,6 +41,48 @@
             margin-bottom: 2rem;
             border: 1px solid #e2e8f0;
         }
+        .criteria-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        @media (min-width: 768px) {
+            .criteria-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        .criteria-card {
+            border-radius: 0.5rem;
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+        }
+        .criteria-header {
+            padding: 1rem;
+            font-weight: 800;
+            text-align: center;
+            color: white;
+            font-size: 1.125rem;
+        }
+        .criteria-body {
+            background-color: white;
+        }
+        .criteria-section {
+            padding: 1.25rem;
+        }
+        .criteria-section + .criteria-section {
+            border-top: 1px solid #e2e8f0;
+            background-color: #fafafa;
+        }
+        .criteria-title {
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+        }
+        .icon-yes { color: #16a34a; }
+        .icon-no { color: #dc2626; }
+        
         .back-link {
             color: #4f46e5;
             text-decoration: none;
@@ -92,6 +134,17 @@
             margin-bottom: 1rem; 
             color: #475569;
         }
+        .contact-box {
+            background-color: #f8fafc;
+            border: 1px solid #cbd5e1;
+            border-left: 4px solid #3b82f6;
+            padding: 1.25rem;
+            border-radius: 0.5rem;
+            text-align: left;
+            color: #334155;
+            margin-top: 2rem;
+            font-size: 0.95rem;
+        }
     </style>
 </head>
 <body class="p-8">
@@ -111,7 +164,7 @@
                     Important: Els acords no es poden editar directament
                 </h3>
                 <p class="mb-0 mt-2">
-                    Com que els acords són documents legals signats, <strong>no és possible modificar-los</strong> un cop formalitzats. Per fer qualsevol canvi, el procediment sempre comença per <strong>finalitzar l'acord actual</strong>.
+                    Com que els acords són documents legals signats, <strong>no és possible modificar-los</strong> un cop formalitzats. Per fer qualsevol canvi, el procediment sempre comença per <strong>finalitzar l'acord actual</strong> o bé anul·lar-lo, segons el cas.
                 </p>
             </div>
 
@@ -133,7 +186,7 @@
 
             <div class="step-card">
                 <h2>Què he de fer després de finalitzar?</h2>
-                <p>Un cop finalitzat l'acord actual, haureu de triar entre fer una <strong>Pròrroga</strong> o un <strong>Nou Acord</strong> segons el tipus de modificació:</p>
+                <p>Un cop finalitzat l'acord actual (si procedeix finalització i no anul·lació), haureu de triar entre fer una <strong>Pròrroga</strong> o un <strong>Nou Acord</strong> segons el tipus de modificació:</p>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
                     <!-- Opció A: Pròrroga -->
@@ -163,14 +216,91 @@
 
             <img src="https://github.com/EscolaEmpresa/Practiques_empresa/blob/main/imatges/modificar_acord/modificacio_acord.png?raw=true" alt="Opcions en finalitzar un acord" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
             <div class="img-placeholder" style="display:none;">
-                <p><strong>Imatge 1:</strong> Captura de pantalla mostrant el menú de "Finalitzar Acord" amb les opcions disponibles (pròrroga, nou acord, etc.). <br>Nom esperat: <code>imatges/modificar_acord/modificacio_acord.png</code></p>
+                <p><strong>Imatge finalització:</strong> Captura de pantalla mostrant el menú de "Finalitzar Acord". <br>Nom esperat: <code>imatges/modificar_acord/modificacio_acord.png</code></p>
+            </div>
+
+            <!-- Separador visual abans del resum -->
+            <hr class="my-12 border-slate-200">
+
+            <!-- SECCIÓ RESUM FINAL: Finalització Anticipada vs Anul·lació -->
+            <div class="mt-10 mb-6 bg-slate-50 p-6 rounded-xl border border-slate-200">
+                <h2 class="text-2xl font-bold text-slate-800 text-center mb-2">Resum: Criteris de Finalització Anticipada i Anul·lació</h2>
+                <p class="text-center text-slate-600 mb-6">És fonamental distingir quina acció aplicar en cada cas, sobretot de cara a la <strong>Gestió de l'afiliació i cotització a la Seguretat Social</strong>.</p>
+
+                <div class="criteria-grid">
+                    <!-- Targeta FINALITZACIÓ ANTICIPADA -->
+                    <div class="criteria-card">
+                        <div class="criteria-header bg-slate-700">
+                            FINALITZACIÓ ANTICIPADA
+                        </div>
+                        <div class="criteria-body">
+                            <div class="criteria-section">
+                                <h4 class="criteria-title text-green-700">
+                                    <svg class="w-6 h-6 mr-2 icon-yes" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    SÍ es farà:
+                                </h4>
+                                <ul class="text-sm space-y-2">
+                                    <li>Acabar les hores establertes abans de la data de finalització inicialment prevista.</li>
+                                    <li>Canvi d'horari de l'acord.</li>
+                                    <li>Canvi d'empresa.</li>
+                                    <li>Absència de l'alumnat per motius que NO siguin baixa mèdica, accident de treball, permisos i motius mèdics.</li>
+                                    <li>Finalització voluntària per qualsevol de les parts.</li>
+                                    <li>I altres segons organització de centre.</li>
+                                </ul>
+                            </div>
+                            <div class="criteria-section">
+                                <h4 class="criteria-title text-red-700">
+                                    <svg class="w-6 h-6 mr-2 icon-no" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                                    NO es farà:
+                                </h4>
+                                <ul class="text-sm space-y-2">
+                                    <li>Quan hi hagi absències per baixa mèdica, accident de treball, permisos i motius mèdics.</li>
+                                    <li>Les dades del DNI, NIE o Passaport i NASS siguin incorrectes si encara estem dins el termini dels 10 dies.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Targeta ANUL·LACIÓ -->
+                    <div class="criteria-card">
+                        <div class="criteria-header bg-red-800">
+                            ANUL·LACIÓ
+                        </div>
+                        <div class="criteria-body">
+                            <div class="criteria-section">
+                                <h4 class="criteria-title text-green-700">
+                                    <svg class="w-6 h-6 mr-2 icon-yes" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    SÍ es farà:
+                                </h4>
+                                <ul class="text-sm space-y-2">
+                                    <li>L'alumnat no hagi anat cap dia a l'estada a l'empresa i <strong>no hi ha hores informades</strong>.</li>
+                                    <li>L'acord tingui informació errònia o desactualitzada i <strong>no hi ha hores informades</strong>.</li>
+                                    <li>Les dades de DNI, NIE o Passaport i NASS siguin incorrectes i no s'hagi donat d'alta a la TGSS i <strong>no hi ha hores informades</strong>.</li>
+                                </ul>
+                                <p class="text-xs text-slate-500 mt-3 italic">
+                                    S'haurà d'anul·lar l'acord mitjançant sol·licitud a: <a href="mailto:gestiofpdual.educacio@gencat.cat" class="text-blue-600 underline">gestiofpdual.educacio@gencat.cat</a>
+                                </p>
+                            </div>
+                            <div class="criteria-section">
+                                <h4 class="criteria-title text-red-700">
+                                    <svg class="w-6 h-6 mr-2 icon-no" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                                    NO es farà:
+                                </h4>
+                                <ul class="text-sm space-y-2">
+                                    <li>En cas que l'alumnat hagi registrat hores a l'agenda.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-box">
+                    <p class="mb-2"><strong>Necessites ajuda?</strong></p>
+                    <p class="mb-0">Per a qualsevol consulta, si us plau, adreceu-vos preferentment al <strong class="text-blue-700">coordinador de pràctiques</strong>. Únicament en cas de tractar-se d'una casuística molt enrevessada o excepcional, podeu contactar amb la bústia específica: <a href="mailto:cotitzacio.educacio@gencat.cat" class="text-blue-600 underline font-medium">cotitzacio.educacio@gencat.cat</a></p>
+                </div>
             </div>
 
         </div>
     </div>
 </body>
-
 </html>
-
-
-
