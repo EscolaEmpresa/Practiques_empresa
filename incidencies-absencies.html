@@ -61,6 +61,20 @@
             font-weight: 700;
             margin-bottom: 0.5rem;
         }
+        .protocol-header {
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            font-weight: 800;
+            border-radius: 0.5rem 0.5rem 0 0;
+            font-size: 1.1rem;
+        }
+        .protocol-col {
+            border: 1px solid #e2e8f0;
+            border-top: none;
+            border-radius: 0 0 0.5rem 0.5rem;
+            background-color: #fafafa;
+        }
         p {
             margin-bottom: 1rem;
             color: #475569;
@@ -76,7 +90,7 @@
 
         <div class="content-card">
             <h1 class="text-3xl font-extrabold text-slate-800 mb-6 text-center">Incidències, Baixes i Absències</h1>
-            <p class="text-center text-slate-600 mb-8">Gestió de l'afiliació i cotització a la Seguretat Social en cas d'accidents laborals, malalties o altres absències de l'alumnat.</p>
+            <p class="text-center text-slate-600 mb-8">Protocol d'actuació en cas d'accident a l'empresa, gestió de l'afiliació i procediment per enregistrar les absències de l'alumnat.</p>
 
             <div class="contact-box flex items-start">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -91,55 +105,130 @@
 
             <hr class="my-8 border-slate-200">
 
-            <h2>1. Com procedir davant Accidents o Malalties?</h2>
+            <h2>1. Protocol d'actuació en cas d'Accident de Treball</h2>
+            <p class="mb-6">El procediment depèn de la modalitat formativa i de quina entitat assumeix les obligacions de la Seguretat Social (SS).</p>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 mb-8">
-                <!-- Dual General -->
-                <div class="border border-slate-200 rounded-lg overflow-hidden">
-                    <div class="bg-slate-100 p-4 border-b border-slate-200">
-                        <h3 class="text-slate-800 text-lg mb-0 text-center">Dual General <br><span class="text-sm text-slate-500 font-normal">(Pràctiques NO Remunerades)</span></h3>
-                    </div>
-                    <div class="p-5">
-                        <div class="mb-5">
-                            <h4 class="font-bold text-red-700 mb-2 border-b border-red-100 pb-1">Accident de Treball</h4>
-                            <ul class="list-disc ml-4 text-sm text-slate-700 space-y-2">
-                                <li>Cal comunicar <strong>sempre</strong> l'accident a l'equip de cotització (correu superior), encara que no generi baixa mèdica.</li>
-                                <li><strong>Si l'alumne acudeix a un centre mèdic:</strong>
-                                    <ol class="list-decimal ml-4 mt-1 space-y-1 text-slate-600">
-                                        <li>Ha d'emplenar el butlletí d'assistència.</li>
-                                        <li>És molt important que el metge tramiti la baixa com a <em>accident de treball</em> i no com a malaltia comuna.</li>
-                                    </ol>
-                                </li>
-                            </ul>
+            <!-- FCT / DUAL RÈGIM GENERAL -->
+            <div class="mb-8">
+                <h3 class="text-xl font-bold text-slate-800 mb-4 border-b pb-2">A) FCT / DUAL en Règim General</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- COL 1: SS Centre -->
+                    <div class="flex flex-col shadow-sm">
+                        <div class="protocol-header bg-indigo-700">
+                            La SS l'assumeix el<br>CENTRE FORMATIU
                         </div>
-                        <div>
-                            <h4 class="font-bold text-amber-600 mb-2 border-b border-amber-100 pb-1">Malaltia comuna o Accident no laboral</h4>
-                            <ul class="list-disc ml-4 text-sm text-slate-700 space-y-2">
-                                <li><strong>No cal fer cap gestió</strong> pel que fa a l'afiliació ni cotització a la Seguretat Social.</li>
-                                <li>La incidència s'ha de registrar únicament a l'agenda de l'alumnat (BID).</li>
-                            </ul>
+                        <div class="protocol-col p-5 flex-grow">
+                            <div class="mb-5">
+                                <span class="font-bold text-indigo-900 text-sm block mb-2 border-b border-indigo-200 pb-1">👨‍🎓 Què ha de fer l'alumnat?</span>
+                                <ul class="text-sm text-slate-700 space-y-2 ml-4 list-disc">
+                                    <li>L'alumnat accidentat ha d'anar a un centre de salut públic de l'INSS.</li>
+                                    <li>Emplenar el <strong><a href="https://github.com/EscolaEmpresa/Practiques_empresa/raw/main/documents/Butlletí/ButlletiAccidentTreball.pdf" target="_blank" class="text-blue-600 hover:text-blue-800 underline">Butlletí d'assistència sanitària</a></strong> per accident de treball.</li>
+                                    <li class="text-xs text-slate-500 mt-2 p-2 bg-slate-100 rounded"><strong>MUFACE:</strong> No perden la seva condició de beneficiaris. Han d'anar a la seva mútua. No fan servir el butlletí.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <span class="font-bold text-indigo-900 text-sm block mb-2 border-b border-indigo-200 pb-1">👩‍🏫 Què ha de fer el tutor/a?</span>
+                                <ul class="text-sm text-slate-700 space-y-2 ml-4 list-decimal">
+                                    <li><strong>Notificar a cotitzacio.educacio@gencat.cat</strong>, indicant en l'assumpte "Accident de treball" junt amb el butlletí.</li>
+                                    <li>Notificar l'accident a la Coordinació Territorial d'Ensenyaments Professionals corresponent.</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Erasmus+ -->
-                <div class="border border-slate-200 rounded-lg overflow-hidden">
-                    <div class="bg-blue-50 p-4 border-b border-blue-100">
-                        <h3 class="text-blue-900 text-lg mb-0 text-center">ERASMUS+ <br><span class="text-sm text-blue-600 font-normal">(Pràctiques Remunerades)</span></h3>
+                    <!-- COL 2: SS Empresa -->
+                    <div class="flex flex-col shadow-sm">
+                        <div class="protocol-header bg-teal-700">
+                            La SS l'assumeix l'<br>EMPRESA COL·LABORADORA
+                        </div>
+                        <div class="protocol-col p-5 flex-grow">
+                            <div class="mb-5">
+                                <span class="font-bold text-teal-900 text-sm block mb-2 border-b border-teal-200 pb-1">👨‍🎓 Què ha de fer l'alumnat?</span>
+                                <ul class="text-sm text-slate-700 space-y-2 ml-4 list-disc">
+                                    <li>L'alumnat accidentat ha d'anar a la <strong>mútua de l'empresa</strong> col·laboradora.</li>
+                                    <li><strong>No fan servir</strong> el butlletí d'assistència.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <span class="font-bold text-teal-900 text-sm block mb-2 border-b border-teal-200 pb-1">👩‍🏫 Què ha de fer el tutor/a?</span>
+                                <ul class="text-sm text-slate-700 space-y-2 ml-4 list-decimal">
+                                    <li>Notificar l'accident a la Coordinació Territorial d'Ensenyaments Professionals corresponent.</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="p-5 flex items-center h-full pb-16">
-                        <ul class="list-disc ml-4 text-sm text-slate-700 space-y-2">
-                            <li>En <strong>tots els casos</strong> cal que es comuniqui al correu indicat.</li>
-                            <li>S'ha de comunicar hi hagi baixa o no, independentment de la causa (això inclou l'accident laboral sense baixa mèdica).</li>
-                        </ul>
+
+                    <!-- COL 3: Excepcions -->
+                    <div class="flex flex-col shadow-sm">
+                        <div class="protocol-header bg-slate-600">
+                            NO APLICA<br><span class="text-xs font-normal">(Casos puntuals, estranger...)</span>
+                        </div>
+                        <div class="protocol-col p-5 flex-grow">
+                            <div class="mb-5">
+                                <span class="font-bold text-slate-800 text-sm block mb-2 border-b border-slate-200 pb-1">👨‍🎓 Què ha de fer l'alumnat?</span>
+                                <ul class="text-sm text-slate-700 space-y-2 ml-4 list-disc">
+                                    <li>L'alumnat accidentat ha de <strong>concertar prèviament</strong> a la mútua on anar.</li>
+                                    <li><strong>No fan servir</strong> el butlletí d'assistència.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <span class="font-bold text-slate-800 text-sm block mb-2 border-b border-slate-200 pb-1">👩‍🏫 Què ha de fer el tutor/a?</span>
+                                <ul class="text-sm text-slate-700 space-y-2 ml-4 list-decimal">
+                                    <li>Notificar l'accident a la Coordinació Territorial d'Ensenyaments Professionals corresponent.</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <hr class="my-8 border-slate-200">
+            <!-- ALTERNANÇA DUAL / INTENSIU -->
+            <div class="mb-8">
+                <h3 class="text-xl font-bold text-slate-800 mb-4 border-b pb-2">B) Alternança Dual / Dual en Règim Intensiu</h3>
+                <div class="bg-blue-50 border border-blue-200 rounded-lg p-5">
+                    <p class="text-sm text-blue-900 font-semibold mb-3">✅ Les obligacions de la Seguretat Social les assumeix SEMPRE l'empresa (hi ha un contracte o una beca).</p>
+                    <div class="mt-4 border-t border-blue-200 pt-3">
+                        <span class="font-bold text-blue-900 text-sm block mb-2">👨‍🎓 Què ha de fer l'alumnat?</span>
+                        <p class="text-sm text-slate-700 ml-4 mb-0">En cas d'accident, cal notificar-ho a la <strong>mútua o entitat gestora</strong> de la Seguretat Social concertada per l'empresa.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Altres situacions (Malaltia comuna i Erasmus) -->
+            <div>
+                <h3 class="text-xl font-bold text-slate-800 mb-4 border-b pb-2">C) Altres situacions</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+                    <div class="border border-slate-200 rounded-lg overflow-hidden shadow-sm">
+                        <div class="bg-amber-100 p-3 border-b border-amber-200">
+                            <h4 class="font-bold text-amber-800 text-center mb-0">Malaltia comuna o Accident NO laboral</h4>
+                        </div>
+                        <div class="p-4 bg-white h-full">
+                            <ul class="list-disc ml-4 text-sm text-slate-700 space-y-2">
+                                <li><strong>No cal fer cap gestió</strong> pel que fa a l'afiliació ni cotització a la Seguretat Social.</li>
+                                <li>La incidència s'ha de registrar <strong>únicament a l'agenda</strong> de l'alumnat (BID).</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="border border-slate-200 rounded-lg overflow-hidden shadow-sm">
+                        <div class="bg-purple-100 p-3 border-b border-purple-200">
+                            <h4 class="font-bold text-purple-900 text-center mb-0">ERASMUS+ (Pràctiques Remunerades)</h4>
+                        </div>
+                        <div class="p-4 bg-white h-full">
+                            <ul class="list-disc ml-4 text-sm text-slate-700 space-y-2">
+                                <li>En <strong>tots els casos</strong> cal que es comuniqui al correu de cotització.</li>
+                                <li>S'ha de comunicar hi hagi baixa o no, independentment de la causa (inclòs l'accident laboral sense baixa mèdica).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-10 border-slate-200">
 
             <h2>2. Registre d'Absències a l'Agenda (BID)</h2>
-            <p>Independentment del correu a la Seguretat Social, <strong>qualsevol incidència (baixa i accident) ha de quedar reflectida a l'agenda de l'alumnat (BID)</strong>. A continuació, detallem com s'enregistren els dies:</p>
+            <p>Independentment del correu a la Seguretat Social i els passos anteriors, <strong>qualsevol incidència (baixa i accident) ha de quedar reflectida a l'agenda de l'alumnat (BID)</strong>. A continuació, detallem com s'enregistren els dies:</p>
 
             <div class="step-card mt-6">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
